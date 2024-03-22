@@ -1,0 +1,27 @@
+from functools import reduce
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_generator(n):
+    num = 2
+    while n > 0:
+        if is_prime(num):
+            n -= 1
+            yield num
+        num += 1
+
+prime_numbers = list(prime_generator(10))
+
+print("Простые числа:")
+for prime in prime_numbers:
+    print(prime)
+
+sum_of_primes = reduce(lambda x, y: x + y, prime_numbers)
+
+print("Сумма простых чисел:", sum_of_primes)
