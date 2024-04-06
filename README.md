@@ -24,3 +24,6 @@
 
 !![image](https://github.com/KseniyaMaystrenko/laba5/assets/152999073/d35f70bf-5f9d-4580-bec6-c082faf6fc93)
 
+используемые ресурсы:
+
+[Генераторы списков, множеств и словарей](https://youtu.be/MFo7PMH87oY?feature=shared)
